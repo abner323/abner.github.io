@@ -73,9 +73,10 @@ a {
     text-decoration: none;
 }
 
-li {
+ul {
     display: flex;
-    justify: center;
-    align-item: center;
-    gap: 10px;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
 }
