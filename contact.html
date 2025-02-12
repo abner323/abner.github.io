@@ -6,53 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contato</title>
     <link rel="stylesheet" href="css/contact.css">
+    <style>
+        /* Estilo para a barra de navegação */
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 16px;
+        }
+
+        /* Estilo para exibir as informações do formulário */
+        .user-info {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li>
-                <a href="index.html">home</a>
-            </li>
-            <li>
-                <a href="Portifólio.html">Portifólio</a>
-            </li>
-            <li>
-                <a href="contact.html">contato</a>
-            </li>
-            <li>
-                <a href="sobre.html">sobre</a>
-            </li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="Portifólio.html">Portifólio</a></li>
+            <li><a href="contact.html">contato</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+        </ul>
     </nav>
 
     <div>
         <h1>Cadastro</h1>
         <h2>informe o seu cadastro</h2>
-        <form>
+        <form id="formCadastro">
             <fieldset>
                 <div>
                     <label>Nome</label>
-                    <input type="name" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required>
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="email" namw="Email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div>
                     <label>Qual seu Gênero?</label>
-                    <label>
-                        <input type="radio" name="gênero" value="Masculino">Masculino
-                    </label>
-                    <label>
-                        <input type="radio" name="gênero" value="Feminino">Feminino
-                    </label>
+                    <label><input type="radio" name="genero" value="Masculino">Masculino</label>
+                    <label><input type="radio" name="genero" value="Feminino">Feminino</label>
+                    <label><input type="radio" name="genero" value="Prefiro não dizer">Prefiro não dizer</label>
                 </div>
                 <div>
-                    <input type="radio" name="gênero" value="Prefiro não dizer">Prefiro não dizer
-                </div>
-                <div>
-                    <label>idade</label>
-                    <select id="idade">
+                    <label>Idade</label>
+                    <select id="idade" required>
                         <option selected disabled value="">Selecione</option>
                         <option>Criança</option>
                         <option>Adolescente</option>
@@ -63,11 +68,45 @@
             <div>
                 <br>
                 <label>Fale se você gostou do site</label>
-                <textarea row="6" style="width: 26em;" id="Experiência"></textarea>     
+                <textarea rows="6" style="width: 26em;" id="experiencia"></textarea>
             </div>
-            <button type="submit">Concluido</button>
+            <button type="submit">Concluído</button>
         </form>
+
+        <!-- Espaço para exibir as informações do usuário -->
+        <div class="user-info" id="userInfo" style="display: none;">
+            <h3>Informações do Cadastro:</h3>
+            <p><strong>Nome:</strong> <span id="displayNome"></span></p>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <p><strong>Gênero:</strong> <span id="displayGenero"></span></p>
+            <p><strong>Idade:</strong> <span id="displayIdade"></span></p>
+            <p><strong>Comentário sobre o site:</strong> <span id="displayExperiencia"></span></p>
+        </div>
     </div>
+
+    <script>
+        // Função para exibir as informações do usuário
+        document.getElementById('formCadastro').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio normal do formulário
+
+            // Captura os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const genero = document.querySelector('input[name="genero"]:checked') ? document.querySelector('input[name="genero"]:checked').value : 'Não informado';
+            const idade = document.getElementById('idade').value;
+            const experiencia = document.getElementById('experiencia').value;
+
+            // Exibe as informações capturadas
+            document.getElementById('displayNome').innerText = nome;
+            document.getElementById('displayEmail').innerText = email;
+            document.getElementById('displayGenero').innerText = genero;
+            document.getElementById('displayIdade').innerText = idade;
+            document.getElementById('displayExperiencia').innerText = experiencia;
+
+            // Exibe a div com as informações
+            document.getElementById('userInfo').style.display = 'block';
+        });
+    </script>
 </body>
 
 </html>
