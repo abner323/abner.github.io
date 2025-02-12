@@ -79,4 +79,9 @@ ul {
     list-style-type: none;
     align-items: center;
     padding: 16px;
+    display: flex;
+    justify-content: center; /* Centraliza os links de navegação horizontalmente */
+    align-items: center;
+    gap: 10px;
+    text-align: center;
 }
