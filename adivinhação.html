@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="../css/calculadora.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <a href="Portifólio.html">Portifólio</a>
+            </li>
+            <li>
+                <a href="contact.html">contato</a>
+            </li>
+            <li>
+                <a href="sobre.html">sobre</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <h1>Jogo de Adivinhação</h1>
+    <p>Estou pensando em um número entre 1 e 100. Tente adivinhar!</p>
+
+    <label for="chute">Digite o seu palpite:</label>
+    <input type="number" id="chute" min="1" max="100" required>
+
+    <button onclick="adivinhar()">Adivinhar</button>
+
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+    <script src="../js/adivinhação.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo sobre Futebol</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">home</a>
+            </li>
+            <li>
+                <a href="Portifólio.html">Portifólio</a>
+            </li>
+            <li>
+                <a href="contact.html">contato</a>
+            </li>
+            <li>
+                <a href="sobre.html">sobre</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Quiz sobre Futebol</h1>
+    <p>Responda as perguntas abaixo para testar seus conhecimentos sobre futebol!</p>
+
+    <form id="quizForm">
+        <!-- Pergunta 1: Messi é canhoto ou destro? -->
+        <p>1. Messi é canhoto ou destro?</p>
+        <label>
+            <input type="radio" name="pergunta1" value="canhoto"> Canhoto
+        </label>
+        <label>
+            <input type="radio" name="pergunta1" value="destro"> Destro
+        </label>
+
+        <br><br>
+
+        <!-- Pergunta 2: Cristiano Ronaldo é português ou brasileiro? -->
+        <p>2. Cristiano Ronaldo é português ou brasileiro?</p>
+        <label>
+            <input type="radio" name="pergunta2" value="portugues"> Português
+        </label>
+        <label>
+            <input type="radio" name="pergunta2" value="brasileiro"> Brasileiro
+        </label>
+
+        <br><br>
+
+        <!-- Pergunta 3: Quantas Champions o Barcelona tem? -->
+        <p>3. Quantas Champions o Barcelona tem?</p>
+        <label>
+            <input type="radio" name="pergunta3" value="5"> 5
+        </label>
+        <label>
+            <input type="radio" name="pergunta3" value="6"> 6
+        </label>
+        <label>
+            <input type="radio" name="pergunta3" value="4"> 4
+        </label>
+
+        <br><br>
+
+        <!-- Pergunta 4: Em qual país Ronaldinho Gaúcho jogou? -->
+        <p>4. Em qual país Ronaldinho Gaúcho jogou?</p>
+        <label>
+            <input type="radio" name="pergunta4" value="brasil"> Brasil
+        </label>
+        <label>
+            <input type="radio" name="pergunta4" value="espanha"> Espanha
+        </label>
+        <label>
+            <input type="radio" name="pergunta4" value="franca"> França
+        </label>
+
+        <br><br>
+
+        <!-- Pergunta 5: Quem ganhou a Libertadores em 2019? -->
+        <p>5. Quem ganhou a Libertadores em 2019?</p>
+        <label>
+            <input type="radio" name="pergunta5" value="flamengo"> Flamengo
+        </label>
+        <label>
+            <input type="radio" name="pergunta5" value="river"> River Plate
+        </label>
+        <label>
+            <input type="radio" name="pergunta5" value="boca"> Boca Juniors
+        </label>
+
+        <br><br>
+
+        <button type="button" onclick="calcularPontuacao()">Enviar Respostas</button>
+    </form>
+
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
+    <script src="../js/quiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+    background-color: gainsboro;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header, footer {
+    background: gray;
+    color: white;
+    padding: 20px;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+article {
+    margin-bottom: 20px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
