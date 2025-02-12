@@ -72,3 +72,10 @@ a {
     color:black;
     text-decoration: none;
 }
+
+li {
+    display: flex;
+    justify: center;
+    align-item: center;
+    gap: 10px;
+}
