@@ -32,9 +32,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #ff6347; /* Cor ao passar o mouse */
-}
+
 
 /* Estilo para os títulos */
 h1, h2 {
