@@ -1,4 +1,4 @@
-/* Estilo básico para o body */
+
 body {
     background-color: gainsboro;
     font-family: Arial, sans-serif;
@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Estilo para a navegação */
+
 nav {
     background-color: #333;
 }
@@ -18,13 +18,13 @@ ul {
     align-items: center;
     padding: 16px;
     margin: 0;
-    position: fixed; /* Fixa no topo */
-    width: 100%; /* Ocupa toda a largura */
-    top: 0; /* Fixa no topo da página */
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 ul li {
-    margin: 0 20px; /* Adiciona espaçamento entre os itens */
+    margin: 0 20px; 
 }
 
 a {
@@ -34,7 +34,7 @@ a {
 
 
 
-/* Estilo para os títulos */
+
 h1, h2 {
     text-align: center;
     margin: 20px 0;
