@@ -1,68 +1,14 @@
+/* Estilo básico para o body */
 body {
     background-color: gainsboro;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-div {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
-}
-
-h1, h2 {
-    text-align: center;
-    color: black;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-div > label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-}
-
-button {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-button:hover {
-    background-color: darkgray;
-}
-
-a {
-    color:black;
-    text-decoration: none;
+/* Estilo para a navegação */
+nav {
+    background-color: #333;
 }
 
 ul {
@@ -71,9 +17,113 @@ ul {
     list-style-type: none;
     align-items: center;
     padding: 16px;
-    display: flex;
-    justify-content: center; /* Centraliza os links de navegação horizontalmente */
-    align-items: center;
-    gap: 10px;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: #ff6347; /* Cor ao passar o mouse */
+}
+
+/* Estilo para os títulos */
+h1, h2 {
     text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Estilo para o formulário */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+fieldset div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Estilo para o botão de envio */
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff6347; /* Cor ao passar o mouse */
+}
+
+/* Estilo para exibir as informações do cadastro */
+.user-info {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.user-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.user-info strong {
+    font-weight: bold;
 }
