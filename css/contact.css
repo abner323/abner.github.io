@@ -21,7 +21,6 @@ ul {
     position: fixed; /* Fixa no topo */
     width: 100%; /* Ocupa toda a largura */
     top: 0; /* Fixa no topo da página */
-    font-family: Arial, sans-serif; /* Mesma fonte do body */
 }
 
 ul li {
