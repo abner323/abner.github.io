@@ -1,7 +1,6 @@
 /* Estilo básico para o body */
 body {
     background-color: gainsboro;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,9 +17,7 @@ ul {
     align-items: center;
     padding: 16px;
     margin: 0;
-    position: fixed; /* Fixa no topo */
-    width: 100%; /* Ocupa toda a largura */
-    top: 0; /* Fixa no topo da página */
+    font-family: sans-serif; /* Fonte padrão (sem fonte específica) */
 }
 
 ul li {
@@ -30,7 +27,6 @@ ul li {
 a {
     color: black;
     text-decoration: none;
-    font-size: 1.1rem;
 }
 
 a:hover {
@@ -43,4 +39,3 @@ h1, h2 {
     margin: 20px 0;
     color: #333;
 }
-
